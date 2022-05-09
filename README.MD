@@ -4,18 +4,18 @@
 
 ## Tópicos:
 
-- 1. Diretórios:
+1. Diretórios:
      - classes
      - node_modules
      - utils
 
-- 2. Arquivos:
+2. Arquivos:
      - infixa.js
      - posifxa.js
      - main.js
 
-- 3. Dependencias:
+3. Dependencias:
      - chalk
      - inquirer
 
-- 4. Recursos utilizados
+ 4. Recursos utilizados
