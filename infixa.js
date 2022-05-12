@@ -17,7 +17,7 @@ class infixa{
 			}
 		}
 	}
-
+    //Metodo Principal - Converter infixo para posfixa
 	infixToPrefix(expressao){
 		const pilha = new Stack();
 		const fila = new Queue();
@@ -59,13 +59,16 @@ class infixa{
         }
     }
 
+    //Chamada do metodo para desempilhar, retirar os valores restantes da pilha
     this.desempilhar(pilha, fila)
 
+    //Metodo filtrar dentro da classe Stack
     let ultimaFila = fila.filtrar("(")
 
+    //Transformar os valores da stack em uma String para ser usada no metodo posfixa
     return ultimaFila.join(" ")
 
 	}
 }
-
+//Exporta a classe infixa
 export default infixa

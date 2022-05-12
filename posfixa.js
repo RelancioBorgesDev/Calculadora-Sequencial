@@ -18,7 +18,7 @@ class posfixa{
                 let n1 = pilha.pop();
 
               
-                console.log(chalk.bold.green(`T${i} <= ${n1} ${numero} ${n2} T${i} = ${prioridadePosfixa[numero](n1,n2)}`));
+                console.log(chalk.bold.green(`T${i} <= ${n1} ${numero} ${n2}   T${i} = ${prioridadePosfixa[numero](n1,n2)}`));
                 i++
 
                 pilha.push(prioridadePosfixa[numero](n1,n2));

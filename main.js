@@ -4,7 +4,7 @@ import verificacao from './utils/verificaInput.js'
 class main {
 	constructor(){}
 
-inputUsuario(){
+static inputUsuario(){
 	inquirer
 	//Recebe o input do usuario
 		.prompt([
@@ -19,15 +19,11 @@ inputUsuario(){
 		let inputUsuario = resposta.expressao
 		
 		//Funcao que verifica o input do usuário		
-		let novaVerificacao = new verificacao()
-		novaVerificacao.verificaInput(inputUsuario)
-		
-			
+			verificacao.verificaInput(inputUsuario)
 		})
 
 	}
-}
-
-	let execucao = new main()
-	execucao.inputUsuario()
+}	
+	//Executa todo o projeto
+	main.inputUsuario()
 
